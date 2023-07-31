@@ -1,10 +1,14 @@
 package QuizConsoleApp;
 
+import QuizConsoleApp.POJO.Quiz;
+import QuizConsoleApp.ServiceLayer.QuizServiceLayer;
+
 import java.util.Scanner;
 
 public class QuizConsoleApp {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner( System.in );
-
+        QuizServiceLayer quizServiceLayer = new QuizServiceLayer();
+        quizServiceLayer.displayMenu();
     }
+
 }
