@@ -3,11 +3,12 @@ package QuizConsoleApp.POJO;
 public class Quiz {
     private int questionaireSize;
     private String title;
-    private int[] questionaire;
+    private int[] questionId;
 
-    public Quiz(int questionaireSize, String title) {
+    public Quiz(int questionaireSize, String title, int[] questionId) {
         this.questionaireSize = questionaireSize;
         this.title = title;
+        this.questionId = questionId;
     }
 
     public int getQuestionaireSize() {
@@ -18,11 +19,8 @@ public class Quiz {
         return title;
     }
 
-    public int[] getQuestionaire() {
-        return questionaire;
+    public int[] getQuestionId() {
+        return questionId;
     }
 
-    public void setQuestionaire(int[] questionaire) {
-        this.questionaire = questionaire;
-    }
 }

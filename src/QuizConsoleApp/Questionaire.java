@@ -155,6 +155,13 @@ public class Questionaire {
         for ( Question question : questions ) {
             System.out.println( counter++ + ". " + question.getQuestion() );
         }
-//        System.out.println( questions );
+    }
+
+    public static int getQuestionsSize() {
+        return questions.length;
+    }
+
+    public static Question getQuestion( int questionId ) {
+        return questions[questionId];
     }
 }

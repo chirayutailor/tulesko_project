@@ -14,16 +14,25 @@ public class Question {
     }
 
     public void printQuestionWithOptions() {
-        System.out.println( question );
+        System.out.println( "Question: " + question );
         printOptions();
     }
 
     public void printOptions() {
-        int index = 0;
+        int index = 1;
 
         System.out.println( "Options:");
         for ( Answer answer: answers ) {
-            System.out.println( ( index + 1 ) + ". " + answer.getAnswer() );
+            System.out.println( index++ + ". " + answer.getAnswer() );
         }
+        System.out.println( index + ". Skip the question" );
+    }
+
+    public Answer getAnswer( int index ) {
+        return answers[index];
+    }
+
+    public int getAnswerSize() {
+        return answers.length;
     }
 }
