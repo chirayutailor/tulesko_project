@@ -80,11 +80,11 @@ public class QuizServiceLayer {
     }
 
     private void modifyQuiz() {
-        System.out.println( "Sorry, functionality pending to be implemeted. Please try later on.");
+        System.out.println( "Sorry, functionality pending to be implemented. Please try later on.");
     }
 
     private void deleteQuiz() {
-        System.out.println( "Sorry, functionality pending to be implemeted. Please try later on.");
+        System.out.println( "Sorry, functionality pending to be implemented. Please try later on.");
     }
 
     private void startQuiz() {
